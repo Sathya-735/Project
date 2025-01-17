@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.headcontainer{
+    width: 100%;
+    height: 100px;
+    background-color: #303030;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.headcontainer >h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 80px;
+}
+.headcontainer>ul>li>a:hover{
+    color: #ec5416;
+    text-decoration: underline;
+}
+.headcontainer>a:hover{
+        background-color: #ec5416;
+        color: white;
+}
+.main-1>.info>a:hover{
+    color: #ec5416;
+    background-color:green;
+}
+ul{
+    margin-top: 25px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 25px;
+}
+.headcontainer>a{
+    font-family: monospace;
+   font-size: 20px;
+   background-color: white;
+   color: #ec5416;
+   height: 50px;
+   padding: 10px;
+   border-radius: 50px;
+}
+a{  
+    margin-top: 25px;
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+}
+.main-1{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.info,.myimg{
+    margin: auto;
+}
+.myimg>img{
+    height: 700px;
+    width: 700px;
+}
+.info>a{
+    margin-top: 25px;
+    font-size: 25px;
+    color: white;
+    background-color:#303030;
+    padding: 10px;
+    cursor: pointer;
+}
+.info>p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+.info>h1{
+    font-size: 70px;
+}
+span{
+    color: #ec5416;
+}
+.main-2{
+    background: #303030;
+    margin-top: 100px;
+    width: 100%;   
+    color: white;
+}
+.info-1{
+    margin: auto;
+    text-align: justify;
+    width: 50%;
+    margin-top: 30px;
+    padding: 25px;
+}
+.info-1>p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+}
+.info-1>h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+.main-3{
+    background-color: white;
+}
+.contact>h2{
+    font-size: 30px;
+    padding: 10px;
+    color: #303030;
+    text-align: center;
+}
+.contact{
+    padding: 32px;
+    color: #fff;
+  }
+.contact>form{
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .contact>form>input,
+.contact>form>textarea {
+  margin: 8px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+.contact>form>button{
+    padding: 12px;
+    background: orange;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .footersection{
+    padding: 25px;
+    width: 100%;
+    background-color: #303030;
+  }
+.footersection>p{
+    color: white;
+    font-size: 28px;
+    text-align: center;
+}
+.footersection>.icns>i{
+    color: #ec5416;
+    font-size: 35px;
+}
+.footersection>.icns{
+    margin-left: 42%;
+    padding: 25px;
+   display: flex;
+    column-gap: 25px;
+}
+span {
+    display: inline-block;
+    animation: colorWave 2s infinite;
+    animation-delay: calc(0.1s * var(--i));
+  }
+@keyframes colorWave {
+    0%, 100% {
+      color: orange;
+    }
+    35%{
+        color: green;
+    }
+    50% {
+      color: blue;
+    }
+    75%{
+        color: yellow;
+    }
+  }
+@media (min-width:320px) and (max-width:767px)
+{
+    .headcontainer{
+        width: 100%;
+    }
+    .headcontainer>h1{
+     width: 100%;
+     text-align: center;
+    }
+    .headcontainer>ul{
+        flex-direction: column;
+        display: none;
+    }
+    .headcontainer>a{
+        display: none;
+    }
+    .main-1{
+        margin-top: 83px;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .info,.myimg{
+        margin: auto;
+    }
+    .myimg{
+       text-align: center;
+        width: 100%;
+    }
+    .myimg>img{
+        height: 250px;
+        width: 250px;
+    }
+    .info{
+        text-align: center;
+        width: 100%;
+    }
+    
+    .info>a{
+        margin-top: 25px;
+        font-size: 20px;
+        color: white;
+        background-color:#303030;
+        padding: 5px;
+    }
+    .info>p{
+        font-size: 26px;
+        
+    }
+    .info>h1{
+        font-size: 45px;
+    }
+    span{
+        color: #ec5416;
+    }
+    .main-2{
+        background: #303030;
+        margin-top: 100px;
+        width: 100%;   
+        color: white;
+    }
+    .info-1{
+        margin: auto;
+        text-align: justify;
+        width: 100%;
+        margin-top: 30px;
+        padding: 25px;
+    }
+    .info-1>p{
+        font-size: 25px;
+    }
+    .info-1>h1{
+        text-align: center;
+        font-size: 50px;
+    }
+    .main-3{
+        width: 100%;
+        background-color: white;
+    }
+    .contact>h2{
+        font-size: 30px;
+        padding: 10px;
+        color: #303030;
+        text-align: center;
+    }
+    .contact{
+        width: 100%;
+        padding: 32px;
+        color: #fff;
+      }
+    .contact>form{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        
+      }
+      .contact>form>input,
+    .contact>form>textarea {
+      margin: 8px 0;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      background-color: #f1f1f1;
+    }
+    .contact>form>button{
+        padding: 12px;
+        background: orange;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .footersection{
+        width: 100%;
+      }
+      .footersection>p{
+        width: 100%;
+      }
+      .footersection>.icns{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        column-gap: 10px;
+      }
+    
+}
+@media (min-width:768px) and (max-width:1023px)
+{
+    .headcontainer{
+        width: 100%;
+    }
+    .headcontainer>h1{
+     width: 100%;
+     text-align: center;
+    }
+    .headcontainer>ul{
+        flex-direction: column;
+        display: none;
+    }
+    .headcontainer>a{
+        display: none;
+    }
+    .main-1{
+        margin-top: 70px;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .info,.myimg{
+        margin: auto;
+    }
+    .myimg{
+       text-align: center;
+        width: 100%;
+    }
+    .myimg>img{
+        height: 480px;
+        width: 500px;
+    }
+    .info{
+        text-align: center;
+        width: 100%;
+    }
+    
+    .info>a{
+        margin-top: 25px;
+        font-size: 20px;
+        color: white;
+        background-color:#303030;
+        padding: 5px;
+    }
+    .info>p{
+        font-size: 30px;
+        
+    }
+    .info>h1{
+        font-size: 48px;
+    }
+    span{
+        color: #ec5416;
+    } 
+    .main-2{
+        background: #303030;
+        margin-top: 100px;
+        width: 100%;   
+        color: white;
+    }
+    .info-1{
+        margin: auto;
+        text-align: justify;
+        width: 100%;
+        margin-top: 30px;
+        padding: 25px;
+    }
+    .info-1>p{
+        font-size: 25px;
+    }
+    .info-1>h1{
+        text-align: center;
+        font-size: 50px;
+    }
+    .main-3{
+        width: 100%;
+        background-color: white;
+    }
+    .contact>h2{
+        font-size: 30px;
+        padding: 10px;
+        color: #303030;
+        text-align: center;
+    }
+    .contact{
+        width: 100%;
+        padding: 32px;
+        color: #fff;
+      }
+    .contact>form{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        
+      }
+      .contact>form>input,
+    .contact>form>textarea {
+      margin: 8px 0;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      background-color: #f1f1f1;
+    }
+    .contact>form>button{
+        padding: 12px;
+        background: orange;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .footersection{
+        padding: 0;
+        width: 100%;
+      }
+ .footersection>.icns{
+    margin-left: 200px;
+}
+}
